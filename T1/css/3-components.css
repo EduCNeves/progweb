@@ -1,0 +1,77 @@
+/* ========================================= */
+/* COMPONENTES REUTILIZÁVEIS                 */
+/* ========================================= */
+
+/* --- Componente: Botão de Download --- */
+.download-button {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    background-color: #4A2C4A;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #6B406A;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.download-button i {
+    margin-right: 8px;
+}
+
+
+/* --- Componente: Lista de Contatos --- */
+.contact-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #e9dce5;
+    text-decoration: none;
+    color: #4A2C4A;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    background-color: #4A2C4A;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    width: 25px;
+    text-align: center;
+}
+
+
+/* --- Componente: Lista de Competências --- */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    background-color: #e9dce5;
+    color: #4A2C4A;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}

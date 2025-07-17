@@ -1,0 +1,257 @@
+/* ========================================= */
+/* PÁGINA DE CURRÍCULO (CV)                  */
+/* ========================================= */
+
+.cv-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cv-header h1 {
+    font-size: 2.5rem;
+    color: #4A2C4A;
+}
+
+.contact-info-cv {
+    margin: 10px 0 25px 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.contact-info-cv span {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.cv-section {
+    margin-bottom: 40px;
+}
+
+.cv-section h2 {
+    font-size: 1.75rem;
+    color: #6B406A;
+    border-bottom: 2px solid #e9dce5;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.cv-item {
+    margin-bottom: 25px;
+}
+
+.cv-item h3 {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.cv-item h4 {
+    font-size: 1.1rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.cv-item .cv-date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.cv-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.cv-item ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+
+/* Ajustes no responsivo para a nova página */
+@media (max-width: 768px) {
+    .contact-info-cv span {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* ========================================= */
+/* ESTILOS DE PÁGINAS ESPECÍFICAS            */
+/* ========================================= */
+
+
+/* --- PÁGINA DE CURRÍCULO (CV) --- */
+
+.cv-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cv-header h1 {
+    font-size: 2.5rem;
+    color: #4A2C4A;
+}
+
+.contact-info-cv {
+    margin: 10px 0 25px 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.contact-info-cv span {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.cv-section {
+    margin-bottom: 40px;
+}
+
+.cv-section h2 {
+    font-size: 1.75rem;
+    color: #6B406A;
+    border-bottom: 2px solid #e9dce5;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.cv-item {
+    margin-bottom: 25px;
+}
+
+.cv-item h3 {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.cv-item h4 {
+    font-size: 1.1rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.cv-item .cv-date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.cv-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.cv-item ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Ajustes no responsivo para a página CV */
+@media (max-width: 768px) {
+    .contact-info-cv span {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+
+/* --- PÁGINA DE PROJETOS (GRID DE CARDS) --- */
+
+.project-grid {
+    display: grid;
+    /* Cria colunas responsivas: elas se ajustam automaticamente */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    /* Garante que a imagem não vaze das bordas arredondadas */
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Garante que a imagem cubra a área sem distorcer */
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* Faz o conteúdo ocupar o espaço disponível */
+}
+
+.card-content h3 {
+    font-size: 1.4rem;
+    color: #4A2C4A;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    flex-grow: 1;
+    /* Empurra os botões/tags para o final do card */
+}
+
+.project-tags {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background-color: #e9dce5;
+    color: #4A2C4A;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: #6B406A;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+    color: #4A2C4A;
+    text-decoration: underline;
+}
+
+.project-links i {
+    margin-left: 5px;
+}
+
+.disabled-link {
+    color: #999;
+    pointer-events: none;
+    /* Desabilita o clique */
+    cursor: not-allowed;
+}

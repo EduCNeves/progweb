@@ -1,0 +1,6 @@
+/* Arquivo Principal - Apenas importa os outros */
+
+@import url('1-base.css');
+@import url('2-layout.css');
+@import url('3-components.css');
+@import url('4-pages.css');

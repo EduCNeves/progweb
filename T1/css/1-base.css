@@ -1,0 +1,27 @@
+/* ========================================= */
+/* CONFIGURAÇÕES GLOBAIS E RESET             */
+/* ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    /* Garante que o html e o body possam ocupar a altura total */
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #F5E6F0;
+    color: #333;
+
+    /* --- A MÁGICA PARA O RODAPÉ FIXO ACONTECE AQUI --- */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Garante que o body tenha no mínimo a altura da tela */
+}
